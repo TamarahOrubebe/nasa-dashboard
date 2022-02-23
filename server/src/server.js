@@ -5,7 +5,6 @@ const {mongoConnect} = require('./services/mongo')
 const { loadPlanetsData } = require('./models/planets.model');
 const { loadLaunchData } = require('./models/launches.model');
 
-require('dotenv').configure();
 
 const server = http.createServer(app);
 

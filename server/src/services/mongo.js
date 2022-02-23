@@ -1,6 +1,8 @@
-const mongoose = require('mongoose');
+require("dotenv").configure();
 
-//Connect to Mongo Atlas with URL 
+const mongoose = require("mongoose");
+
+//Connect to Mongo Atlas with URL
 const MONGO_URL = process.env.MONGO_URL;
 
 mongoose.connection.once("open", () => {
@@ -11,21 +13,18 @@ mongoose.connection.on("error", (error) => {
 	console.error(error);
 });
 
-
-
 async function mongoConnect() {
- await mongoose.connect(MONGO_URL, {
+	await mongoose.connect(MONGO_URL, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
- });
+	});
 }
 
 async function mongoDisconnect() {
-    await mongoose.disconnect();
+	await mongoose.disconnect();
 }
-
 
 module.exports = {
-    mongoConnect,
-    mongoDisconnect
-}
+	mongoConnect,
+	mongoDisconnect,
+};
