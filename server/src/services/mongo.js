@@ -1,5 +1,4 @@
 
-
 const mongoose = require("mongoose");
 
 //Connect to Mongo Atlas with URL
