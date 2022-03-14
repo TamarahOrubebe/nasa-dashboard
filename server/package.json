@@ -7,7 +7,7 @@
 		"test": "jest",
 		"test-watch": "jest --watchAll",
 		"watch": "nodemon src/server.js",
-		"start": "node --trace-warnings src/server.js ",
+		"start": "node --trace-warnings ./src/server.js ",
 		"cluster": "pm2 start src/server.js -i max"
 	},
 	"keywords": [],
