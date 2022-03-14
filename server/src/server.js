@@ -8,7 +8,7 @@ const { loadLaunchData } = require("./models/launches.model");
 
 const server = http.createServer(app);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000
 
 async function startServer() {
 	await mongoConnect();
