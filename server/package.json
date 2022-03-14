@@ -24,8 +24,8 @@
 		"express": "^4.17.2",
 		"mongoose": "^6.1.7",
 		"morgan": "^1.10.0",
-		"nasa-project": "file:..",
-		"pm2": "^5.1.2"
+		"nasa-project": "file:.."
+
 	},
 	"devDependencies": {
 		"jest": "^27.4.7",
