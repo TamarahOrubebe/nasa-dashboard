@@ -6,11 +6,11 @@
   "scripts": {
     "server-install": "npm install --prefix server",
     "client-install": "npm install --prefix client",
-    "install": "npm run client-install && npm run server-install",
+    "install": "npm run server-install && npm run client-install",
     "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
     "watch":  "concurrently \"npm:server\" \"npm:client\"",
-    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "start": "npm run build --prefix client && npm start --prefix server",
     "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
     "test": "npm run test --prefix server && npm run test --prefix client"
   },
