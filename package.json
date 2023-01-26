@@ -2,7 +2,7 @@
   "name": "nasa-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server/src/server.js",
   "scripts": {
     "server-install": "npm install --prefix server",
     "client-install": "npm install --prefix client",
@@ -10,7 +10,7 @@
     "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
     "watch":  "concurrently \"npm:server\" \"npm:client\"",
-    "postinstall": "npm run build --prefix client",
+    "postinstall": "npm build --prefix client",
     "start": "npm start --prefix server",
     "test": "npm run test --prefix server && npm run test --prefix client"
   },
